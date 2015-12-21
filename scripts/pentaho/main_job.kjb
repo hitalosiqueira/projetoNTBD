@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>main_job</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2015&#x2f;10&#x2f;23 05&#x3a;30&#x3a;33.172</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2015&#x2f;10&#x2f;23 05&#x3a;30&#x3a;33.172</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>NTBD-DW</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>NTBD-DW</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>112</xloc>
+      <yloc>64</yloc>
+      </entry>
+    <entry>
+      <name>Limpeza DW</name>
+      <description/>
+      <type>SQL</type>
+      <sql>DROP TABLE IF EXISTS reclamacao CASCADE&#x3b;&#xa;DROP TABLE IF EXISTS reclamacao_aux CASCADE&#x3b;&#xd;&#xa;DROP TABLE IF EXISTS problema CASCADE&#x3b;&#xd;&#xa;DROP TABLE IF EXISTS faixa_etaria CASCADE&#x3b;&#xd;&#xa;DROP TABLE IF EXISTS tempo CASCADE&#x3b;&#xd;&#xa;&#xd;&#xa;-- Limpando Views&#xd;&#xa;DROP VIEW IF EXISTS data_fechamento&#x3b;&#xd;&#xa;DROP VIEW IF EXISTS data_abertura&#x3b;&#xd;&#xa;&#xd;&#xa;-- Limpando IDs virtuais de Agregados&#xd;&#xa;DROP SEQUENCE IF EXISTS tempo_serial&#x3b;&#xd;&#xa;DROP SEQUENCE IF EXISTS tempo_serial_mes&#x3b;&#xd;&#xa;DROP SEQUENCE IF EXISTS area_serial&#x3b;&#xd;&#xa;DROP SEQUENCE IF EXISTS assunto_serial&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>304</xloc>
+      <yloc>64</yloc>
+      </entry>
+    <entry>
+      <name>Cria&#xe7;&#xe3;o de Tabelas Dimens&#xf5;es e Fato</name>
+      <description/>
+      <type>SQL</type>
+      <sql>CREATE TABLE tempo &#x28;&#xd;&#xa;    id_tempo serial NOT NULL,&#xd;&#xa;    dia integer,&#xd;&#xa;    mes integer,&#xd;&#xa;    ano integer,&#xd;&#xa;    feriado boolean,&#xd;&#xa;	feriado_importante varchar&#x28;30&#x29;,&#xd;&#xa;    primary key &#x28;id_tempo&#x29;&#xd;&#xa;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;CREATE TABLE faixa_etaria &#x28;&#xd;&#xa;    id_faixa_etaria serial NOT NULL,&#xd;&#xa;    max integer NOT NULL,&#xd;&#xa;    min integer NOT NULL,&#xd;&#xa;    primary key&#x28;id_faixa_etaria&#x29;&#xd;&#xa;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;CREATE TABLE problema &#x28;&#xa;    id_problema serial NOT NULL,&#xa;    categoria character varying&#x28;200&#x29;,&#xa;    origem character varying&#x28;100&#x29;,&#xa;    area character varying&#x28;200&#x29;,&#xa;    assunto character varying&#x28;200&#x29;,&#xa;    primary key&#x28;id_problema&#x29;&#xa;&#x29;&#x3b;&#xa;&#xd;&#xa;CREATE TABLE reclamacao &#x28;&#xa; 	id_data_reclamacao integer references tempo&#x28;id_tempo&#x29;,&#xa;    id_data_finalizada integer references tempo&#x28;id_tempo&#x29;,&#xa;    id_problema integer references problema&#x28;id_problema&#x29;,&#xa;    id_faixa_etaria integer references faixa_etaria&#x28;id_faixa_etaria&#x29;,&#xa;    notas_consumidor integer,&#xa;    status boolean,&#xa;    nome_fantasia character varying&#x28;100&#x29;,&#xa;    primary key&#x28;id_data_reclamacao, id_data_finalizada, id_problema, id_faixa_etaria, nome_fantasia&#x29;&#xa;&#x29;&#x3b;&#xa;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES  &#x28;0, 20&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;21, 30&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;31, 40&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;41, 50&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;51, 60&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;61, 70&#x29;&#x3b;&#xa;INSERT INTO faixa_etaria &#x28;min, max&#x29; VALUES &#x28;71, 0&#x29;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>64</yloc>
+      </entry>
+    <entry>
+      <name>Cria&#xe7;&#xe3;o de Views para Tempo</name>
+      <description/>
+      <type>SQL</type>
+      <sql>CREATE VIEW data_abertura AS&#xd;&#xa;    SELECT&#xd;&#xa;        t.id_tempo as id_data_abertura,&#xd;&#xa;        t.dia AS dia, t.mes AS mes, t.ano AS ano&#xd;&#xa;    FROM reclamacao r JOIN tempo t ON &#x28;t.id_tempo &#x3d; r.id_data_reclamacao&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;CREATE VIEW data_fechamento AS&#xd;&#xa;    SELECT&#xd;&#xa;        t.id_tempo as id_data_fechamento,&#xd;&#xa;        t.dia AS dia, t.mes AS mes, t.ano AS ano&#xd;&#xa;    FROM reclamacao r JOIN tempo t ON &#x28;t.id_tempo &#x3d; r.id_data_finalizada&#x29;&#x3b;&#xd;&#xa;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>688</xloc>
+      <yloc>64</yloc>
+      </entry>
+    <entry>
+      <name>Populando Dimens&#xf5;es</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;popula_dimensoes.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>880</xloc>
+      <yloc>208</yloc>
+      </entry>
+    <entry>
+      <name>Populando Fato</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;popula_fato.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>304</xloc>
+      <yloc>208</yloc>
+      </entry>
+    <entry>
+      <name>Cria&#xe7;&#xe3;o de Tabela Fato Auxiliar </name>
+      <description/>
+      <type>SQL</type>
+      <sql>CREATE TABLE IF NOT EXISTS reclamacao_aux &#x28;&#xd;&#xa;	id_reclamacao serial NOT NULL,&#xd;&#xa;    id_problema integer,&#xd;&#xa;    id_faixa_etaria integer,&#xd;&#xa;    notas_consumidor integer,&#xd;&#xa;    status boolean,&#xd;&#xa;    nome_fantasia character varying&#x28;100&#x29;,&#xd;&#xa;	data_reclamacao date,&#xd;&#xa;	data_finalizado date,&#xd;&#xa;    primary key&#x28;id_reclamacao&#x29;&#xd;&#xa;&#x29;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>688</xloc>
+      <yloc>208</yloc>
+      </entry>
+    <entry>
+      <name>Insere Feriados</name>
+      <description/>
+      <type>SQL</type>
+      <sql>-- inserting holidays from 2014 to 2016&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 1, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;3, 3, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;4, 3, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;18, 4, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;21, 4, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 5, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;19, 6, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;7, 9, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;2, 11, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;15, 11, 2014, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;25, 12, 2014, true, &#x27;natal&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 1, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;16, 2, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;17, 2, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;3, 4, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;21, 4, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 5, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;4, 6, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;7, 9, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;2, 11, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;15, 11, 2015, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;25, 12, 2015, true, &#x27;natal&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 1, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;8, 2, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;9, 2, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;21, 4, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;1, 5, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;26, 5, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;7, 9, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;2, 11, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado&#x29; VALUES &#x28;15, 11, 2016, true&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;27, 11, 2015 true, &#x27;black friday&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;28, 11, 2014 true, &#x27;black friday&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;10, 05, 2015 true, &#x27;dia das maes&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;11, 05, 2014 true, &#x27;dia das maes&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;12, 10, 2014 true, &#x27;dia das criancas&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;12, 10, 2015 true, &#x27;dia das criancas&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;27, 11, 2015 true, &#x27;pascoa&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;27, 11, 2015 true, &#x27;pascoa&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;10, 08, 2015 true, &#x27;dia dos pais&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;09, 08, 2015 true, &#x27;dia dos pais&#x27;&#x29;&#x3b;&#xd;&#xa;INSERT INTO tempo &#x28;dia, mes, ano, feriado, feriado_importante&#x29; VALUES &#x28;25, 12, 2016, true, &#x27;natal&#x27;&#x29;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>880</xloc>
+      <yloc>64</yloc>
+      </entry>
+    <entry>
+      <name>Mensagem ETL Finalizada</name>
+      <description/>
+      <type>MSGBOX_INFO</type>
+      <bodymessage>Fase ETL Finalizada. Iniciando configura&#xe7;&#xe3;o OLAP</bodymessage>
+      <titremessage/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>112</xloc>
+      <yloc>208</yloc>
+      </entry>
+    <entry>
+      <name>Populando Reclamacao</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;popula_reclamacao_aux.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>256</yloc>
+      </entry>
+    <entry>
+      <name>Adiciona Label - Dimens&#xf5;es Agregados</name>
+      <description/>
+      <type>SQL</type>
+      <sql>ALTER TABLE problema ADD COLUMN label varchar&#x28;30&#x29; default &#x27;problema&#x27;&#x3b;&#xd;&#xa;ALTER TABLE tempo ADD COLUMN label varchar&#x28;30&#x29; default &#x27;dia&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>112</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>Prepara Dimens&#xf5;es Agregados Problema</name>
+      <description/>
+      <type>SQL</type>
+      <sql>-- PROBLEMA &#x3e; ASSUNTO&#xd;&#xa;CREATE SEQUENCE assunto_serial&#x3b;&#xd;&#xa;SELECT setval&#x28;&#x27;assunto_serial&#x27;, max&#x28;id_problema&#x29; &#x2b; 1&#x29; FROM problema&#x3b;&#xd;&#xa;INSERT INTO problema&#x28;id_problema, categoria, origem, area, assunto, label&#x29; &#xd;&#xa;SELECT nextval&#x28;&#x27;assunto_serial&#x27;&#x29; AS id_problema, &#x27;&#x23;&#x23;&#x23;&#x27; AS categoria, &#x27;&#x23;&#x23;&#x23;&#x27;, &#xd;&#xa;	p.area, p.assunto, &#x27;assunto&#x27; AS label &#xd;&#xa;FROM &#x28;SELECT DISTINCT assunto, area FROM problema&#x29; AS p&#x3b;&#xd;&#xa;&#xd;&#xa;-- PROBLEMA &#x3e; ASSUNTO &#x3e; AREA&#xd;&#xa;CREATE SEQUENCE area_serial&#x3b;&#xd;&#xa;SELECT setval&#x28;&#x27;area_serial&#x27;, max&#x28;id_problema&#x29; &#x2b; 1&#x29; FROM problema&#x3b;&#xd;&#xa;INSERT INTO problema&#x28;id_problema, categoria, origem, area, assunto, label&#x29; &#xd;&#xa;SELECT nextval&#x28;&#x27;area_serial&#x27;&#x29; AS id_problema, &#x27;&#x23;&#x23;&#x23;&#x27; AS categoria, &#x27;&#x23;&#x23;&#x23;&#x27;, &#xd;&#xa;	p.area, &#x27;&#x23;&#x23;&#x23;&#x27;, &#x27;area&#x27; AS label &#xd;&#xa;FROM &#x28;SELECT DISTINCT area FROM problema&#x29; AS p&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>Y</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>Prepara D. Agregados Tempo</name>
+      <description/>
+      <type>SQL</type>
+      <sql>-- A agrega&#xe7;&#xe3;o de tempo se baseia em feriados importantes, selecionados pelo grupo.&#xd;&#xa;-- Sendo assim, ser&#xe1; considerado o m&#xea;s em que o feriado importante acontece para que se&#xd;&#xa;-- se possa ter alguma no&#xe7;&#xe3;o de intervalos de tempo antes e depois do feriado, onde as&#xd;&#xa;-- compras s&#xe3;o mais abundantes.&#xd;&#xa;&#xd;&#xa;CREATE SEQUENCE tempo_serial&#x3b;&#xd;&#xa;SELECT setval&#x28;&#x27;tempo_serial&#x27;, max&#x28;id_tempo&#x29; &#x2b; 1&#x29; FROM tempo&#x3b;&#xd;&#xa;INSERT INTO tempo&#x28;id_tempo, dia, mes, ano, feriado, feriado_importante, label&#x29;&#xd;&#xa;SELECT nextval&#x28;&#x27;tempo_serial&#x27;&#x29; AS id_tempo, 0 AS dia, t.mes, t.ano, true, t.feriado_importante, &#x27;feriado importante&#x27;&#xd;&#xa;FROM &#x28;SELECT mes, ano, feriado_importante FROM tempo WHERE feriado_importante IS NOT NULL&#x29; AS t&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CREATE SEQUENCE tempo_serial_mes&#x3b;&#xd;&#xa;SELECT setval&#x28;&#x27;tempo_serial_mes&#x27;, max&#x28;id_tempo&#x29; &#x2b; 1&#x29; FROM tempo&#x3b;&#xd;&#xa;INSERT INTO tempo&#x28;id_tempo, dia, mes, ano, feriado, feriado_importante, label&#x29;&#xd;&#xa;SELECT nextval&#x28;&#x27;tempo_serial_mes&#x27;&#x29; AS id_tempo, 0 AS dia, t.mes, t.ano, false, &#x27;&#x27;, &#x27;mes&#x27;&#xd;&#xa;FROM &#x28;SELECT DISTINCT mes, ano FROM tempo&#x29; AS t&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>688</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>Mensagem Prep. Dim. Finalizada</name>
+      <description/>
+      <type>MSGBOX_INFO</type>
+      <bodymessage>Prepara&#xe7;&#xe3;o de Dimensoes Finalizada</bodymessage>
+      <titremessage/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>880</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>Limpa Reclama&#xe7;&#xe3;o Aux</name>
+      <description/>
+      <type>SQL</type>
+      <sql>delete from reclamacao_aux where id_reclamacao IN &#x28;&#xd;&#xa;	select id_reclamacao from &#x28;&#xd;&#xa;	  SELECT id_reclamacao,&#xd;&#xa;	  ROW_NUMBER&#x28;&#x29; OVER&#x28;PARTITION BY data_reclamacao, data_finalizado, id_problema, id_faixa_etaria, nome_fantasia&#x29; AS Row&#xd;&#xa;	  FROM reclamacao_aux&#xd;&#xa;	&#x29; dups&#xd;&#xa;	where &#xd;&#xa;	dups.Row &#x3e; 1&#xd;&#xa;&#x29;&#xd;&#xa;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>NTBD-DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Cria&#xe7;&#xe3;o de Tabela Fato Auxiliar </from>
+      <to>Populando Reclamacao</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>Limpeza DW</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Limpeza DW</from>
+      <to>Cria&#xe7;&#xe3;o de Tabelas Dimens&#xf5;es e Fato</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Cria&#xe7;&#xe3;o de Tabelas Dimens&#xf5;es e Fato</from>
+      <to>Cria&#xe7;&#xe3;o de Views para Tempo</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Populando Dimens&#xf5;es</from>
+      <to>Cria&#xe7;&#xe3;o de Tabela Fato Auxiliar </to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Cria&#xe7;&#xe3;o de Views para Tempo</from>
+      <to>Insere Feriados</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Insere Feriados</from>
+      <to>Populando Dimens&#xf5;es</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Populando Fato</from>
+      <to>Mensagem ETL Finalizada</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Mensagem ETL Finalizada</from>
+      <to>Adiciona Label - Dimens&#xf5;es Agregados</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Adiciona Label - Dimens&#xf5;es Agregados</from>
+      <to>Prepara Dimens&#xf5;es Agregados Problema</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepara Dimens&#xf5;es Agregados Problema</from>
+      <to>Prepara D. Agregados Tempo</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Prepara D. Agregados Tempo</from>
+      <to>Mensagem Prep. Dim. Finalizada</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Populando Reclamacao</from>
+      <to>Limpa Reclama&#xe7;&#xe3;o Aux</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Limpa Reclama&#xe7;&#xe3;o Aux</from>
+      <to>Populando Fato</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>
